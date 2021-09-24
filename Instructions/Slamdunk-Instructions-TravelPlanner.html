@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <title>Slamdunk - TravelPro</title>
+    <style>
+      body{
+        margin:25px 0px 10px 10px;
+      }
+      h1{
+        
+        background: linear-gradient(to right, rgb(68, 141, 190), rgb(67, 222, 114));
+        margin:0 auto 0 auto;
+        padding:15px 50px 15px 50px;
+        width:fit-content;
+        border-radius: 0px 60px 0px 60px;
+  
+      }
+      h2{
+        background:#B2A59E;
+        padding:10px 50px 10px 20px;
+        width:fit-content;
+        border-radius: 0px 50px 50px 0px;
+      }
+      img,video{
+        display: block;
+        margin:30px auto 30px auto;
+        outline: 3px solid #B2A59E;
+          outline-offset: 10px;
+      }
+      h3#title {
+        background:#44BEA4;
+        padding:10px 30px 10px 30px;
+        border-radius: 0px 30px 0px 30px;
+        width:fit-content;
+      }
+      h3#pageTitle{
+        background:#DEBF43;
+        border-radius: 0px 30px 0px 30px;
+        padding:10px 30px 10px 30px;
+        width:fit-content;
+      }
+      .api {
+        background-color: #2f2c2c;
+        color: white;
+        padding: 5px;
+        margin: auto 5px;
+        font-weight: 300;
+      }
+      .warning {
+        color: #c0392b;
+        font-weight: bold;
+      }
+      a{
+        color: #241190;
+        font-weight: bolder;
+      }
+      .info {
+        color: #c75e04;
+        font-weight: bolder;
+        font-size: 20px;
+        font-style: italic;
+      }
+      .item1 {
+        grid-area: title;
+        font-size: 23px;
+        text-align: left;
+        padding:10px	
+      }
+      .item1 span{
+        font-size:30px;
+        color: rgb(172, 0, 0);
+        text-align: left;
+      }
+      .imp-note {
+        width: auto;
+        margin: 20px 20px 20px 20px;
+        text-align: left;
+        display: grid;
+        margin:"fit-content";
+        outline: 2px solid #C21E1B;
+      }
+      ul{
+        line-height: 180%;
+        font-size: 18px;
+      }
+      pre {
+        background: #D7DBDD;
+        padding: 3px;
+        outline: 3px solid #2E4053;
+        outline-offset: 10px;
+      }
+    </style>
+  </head>
+  <body style="font-size: large;">  
+    <h1><span>Slamdunk - TravelPro - Problem Statement</span></h1>
+    <h2><span>Front-End</span></h2>
+    <ul style="line-height:180%">
+      <li>The challenge is meant to design and develop a travel application that should be able to display basic web page like Home , About us, Contact us, Travel Advisory etc.</li>
+      <li>Create a folder inside the project folder and build your app in any front-end framework with the required functionalities mentioned below.</li>
+      <li>Your front-end app should run on <span class="info">port 8000</span>.</li>
+    </ul>
+    <div class="imp-note">
+      <p class="item1">
+        <span><u>Note:</u></span><br/>
+        <span>While submitting the application, your app should run on port 8000. It is required for testing. Otherwise, your submission will not be validated.</span>
+      </p>
+    </div>
+    <h3>Working of the Application</h3>
+    <p style="text-indent: 50px;">This web application contains 5 pages - Home page, Covid Guidelines page, Travel Guide page, About US page and Contact US page.</p>
+    <h3 id="title"><span>Backend Info</span></h3>
+
+		<!-- <hr /> -->
+		<ul style="line-height: 180%;">
+			<li>This application uses <span class="info">NodeJS</span> as the back-end which resides in <span class="info">NodeJS/</span> folder.<strong>(Don&#39;t modify the back-end)</strong></li>
+			<li>By default, the back-end has state details and guidelines.</li>
+			<li>There are some default data stored in the database which resides in
+				<span class="info">nodejs/src/mongoose/db/defaultDB.js.</span></li>
+			<li>Run <span class="info">npm start</span> command from nodejs directory to run the back-end <strong>(It should be run on port 8001)</strong></li>
+		</ul>
+
+		<h3 id="title"><span><strong>MongoDB Commands</strong></span></h3>
+
+		<!-- <hr /> -->
+		<ul>
+			<li>You can open the mongo shell by running&nbsp;<span
+				class="info">mongo</span> from the terminal.
+			</li>
+			<li>You can view all the data from the database in MongoDB by running&nbsp;<span
+				class="info">show dbs</span>&nbsp;from the mongo shell.</li>
+			<li>You can select the database by running&nbsp;<span
+				class="info">use states</span>.</li>
+			<li>You can view the names of the collections by running&nbsp;<span class="info">show
+						collections</span>.</li>
+			<li>You can view the data inside a collection by running&nbsp;<span
+				class="info">db.collection_name.find()</span>.</li>
+			<li>Enter <span class="info">Ctrl+C</span>&nbsp;to exit.</li>
+    </ul>
+    
+    <h3 id="pageTitle"><span>Home Page</span></h3>
+    <ul style="line-height:180%">
+      <li>This page contains welcome details about the website.</li>
+      <li>Use the template present in <a href="./templates/home.html" target="_blank">home.html</a> file. The basic structure of the home page is displayed for your reference.<br />
+        <img src="./assets/home.png" alt="home">
+      </li>
+      <li>For your reference, here's a GIF image demonstrating the expected working of the application. Build your own design using the provided templates to generate the output.<br />
+        <p><strong>Please don't recreate the reference design, it will affect your final score.</strong></p>
+        <video width="920" height="540" controls loop autoplay>
+          <source src="./assets/home.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>On clicking <strong>Popular Destination</strong>, the event should navigate to the travelguide page.</li>
+    </ul>
+
+    <h3 id="pageTitle">Covid Guidance Page</span></h3>
+    <ul style="line-height:180%">
+      <li>In this page, user can view the travel guidelines, according to different states.</li>
+      <li>When the page loads, the <span class="api">"api/states/Header?search=guidelines"</span> should fetch the header details from back-end.</li>
+      <li>When the page loads, the <span class="api">"api/states/General?search=guidelines"</span> should fetch the guidelines details from back-end.</li>
+      <li>When the page loads, the <span class="api">"api/states/Operators?search=guidelines"</span> should fetch the operators details from back-end.</li>
+      <li>On clicking each state, the state-wise guidelines should be displayed. <span class="api">"/api/states/${name_of_state}?search=guidelines"</span> should fetch the state guidelines details from back-end.</li>
+      <br />
+      <strong>Sample Request</strong> 
+			<pre>/api/states/${TamilNadu}?search=guidelines</pre>
+      <li>Use only the <strong>state names</strong> which is given in the template.</li>
+      <li>Use the template present in <a href="./templates/covidguidance.html" target="_blank">covidguidance.html</a> file. The basic structure of the Covid Guidance page is displayed below.<br />
+        <img src="./assets/covidguideline.png" alt="covidguidance">
+      </li>
+      <li>For your reference, here's a GIF image demonstrating the expected working of the application. Build your own design using the provided templates to generate the output.<br />
+        <p><strong>Please don't recreate the reference design, it will affect your final score.</strong></p>
+        <video width="920" height="540" controls loop autoplay>
+          <source src="./assets/covidguidelines.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>Using the navigation bar, we should be able to navigate from one page to another.</li>
+    </ul>
+    
+    <h3 id="pageTitle">Travel Guide Page</h3>
+    <ul style="line-height:180%">
+      <li>This page should display all the popular destinations for each state.</li>
+      <li>Use <span class="api">"/api/states/${name_of_state}?search=spots"</span> to fetch popular spots details from back-end.</li>
+      <br />
+      <strong>Sample Request</strong> 
+			<pre>/api/states/${TamilNadu}?search=spots</pre>
+      <li>Use <span class="api">"/api/states/${name_of_state}?search=descriptions"</span> to fetch description details of the states from back-end.</li>
+      <br />
+      <strong>Sample Request</strong> 
+      <pre>/api/states/${TamilNadu}?search=descriptions</pre>
+      <li>Use only the <strong>state names</strong> which is given in the template.</li>
+      <li>Use the template present in <a href="./templates/travelguide.html" target="_blank">travelguide.html</a> file. The basic structure of the Travel Guide page is displayed below.<br />
+        <img src="./assets/travelguide.png" alt="travelguide">
+      </li>
+      <li>For your reference, here's a GIF image demonstrating the expected working of the application. Build your own design using the provided templates to generate the output. <br />
+        <p><strong>Please don't recreate the reference design, it will affect your final score.</strong></p>
+        <video width="920" height="540" controls loop autoplay>
+          <source src="./assets/travelguides.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>Navigate Home by clicking <strong>the Home</strong> tag on the page.</li>
+    </ul>
+    <h3 id="pageTitle">About Us Page</h3>
+    <ul style="line-height: 180%;">
+      <li>This page should display How we work for you.</li>
+      <li>Use the template present in <a href="./templates/aboutus.html" target="_blank">aboutus.html</a> file. The basic structure of the about us page is displayed below.<br />
+        <img src="./assets/aboutus.png" alt="about">
+      </li>
+      <li>For your reference, here's a GIF image demonstrating the expected working of the application. Build your own design using the provided templates to generate the output. <br />
+        <p><strong>Please don't recreate the reference design, it will affect your final score.</strong></p>
+        <video width="920" height="540" controls loop autoplay>
+          <source src="./assets/aboutus.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </li>
+      <li>Using the navigation bar, you should be able to navigate from one page to another.</li>
+    </ul>
+    <h3 id="pageTitle">Contact Us Page</h3>
+    <ul style="line-height: 180%;">
+      <li>This page should display the contact details of the site.</li>
+      <li>Use the template present in <a href="./templates/contact.html" target="_blank">contact.html</a> file. The basic structure of the About Us page is displayed below.<br />
+        <img src="./assets/contact.png" alt="contact">
+      </li>
+      <li>For your reference, here's a GIF image demonstrating the expected working of the application. Build your own design using the provided templates to generate the output. <br />
+        <p><strong>Please don't recreate the reference design, it will affect your final score.</strong></p>
+        <img src="./assets/contactus.png" alt="home" width="900" height="500">
+      </li>
+      <li>Using the navigation bar, you should be able to navigate from one page to another.</li>
+    </ul>
+    <p><span style="color:#d35400;"><span style="font-size:x-large;"><strong>Instructions to Install and Test.</strong></span></span></p>
+	<ul>
+		<li>If you want to install project dependencies, run <strong><i>sh install.sh</i></strong> in terminal.</li>
+		<li>To run test cases, run <strong><i>sh test.sh</i></strong> in terminal <strong>(while running the test command, the application should be in running state).</strong> 
+	</ul>
+
+	<div class="imp-note">
+		<p class="item1">
+      <span><u>Note:</u></span><br/>
+      <span>Don't modify or delete the IDs present in the basic templates while building your application as it is required for testing. Otherwise, your submission will not be validated. The basic templates reside in "instructions/templates/".</span>
+    </p>
+  </body>
+</html>
